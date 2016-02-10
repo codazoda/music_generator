@@ -60,7 +60,8 @@
  *
  * It's early and I'm not sure yet. I'm considering all the open source licenses. If 
  * you want to use it, please ask me.
- * 
+ *
+ * @module MusicGenerator
  */
 function MusicGenerator() {
 

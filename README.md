@@ -1,12 +1,4 @@
-# Global
-
-
-
-
-
-* * *
-
-### MusicGenerator() 
+# MusicGenerator
 
 This is a Javascript library for generating random music riffs, patterns, and progressions.
 
@@ -71,7 +63,9 @@ you want to use it, please ask me.
 
 
 
-### rhythmPattern(notes) 
+* * *
+
+### MusicGenerator.rhythmPattern(notes) 
 
 Generate a random rhythm pattern.
 
@@ -91,7 +85,7 @@ var rhythm = generate.rhythmPattern(8);
 **Returns**: `array`, Returns an array representing the pattern.
 
 
-### riffPattern(scale, notes) 
+### MusicGenerator.riffPattern(scale, notes) 
 
 Generate a random riff pattern for the provided scale. Each note can either stay the same, move up, 
 or move down the scale. If it moves up or down it can move one or two notes in that direction.
@@ -116,7 +110,7 @@ var riff = generate.riffPattern(scale, 8);
 **Returns**: , array           The full riff.
 
 
-### chordProgression(number) 
+### MusicGenerator.chordProgression(number) 
 
 Pick a random set of chords. These are returned as numbers that represent the
 numbered chords in any key. For example, [2,5,6] indicates the ii, v, and vi
@@ -136,14 +130,14 @@ var chords = generate.chordProgression(3);
 **Returns**: `array`, The list of chords that were picked.
 
 
-### drumPattern() 
+### MusicGenerator.drumPattern() 
 
 TODO: Will eventually generate a drum pattern.
 
 **Returns**: , array The full drum pattern.
 
 
-### getRandomBool() 
+### MusicGenerator.getRandomBool() 
 
 Returns a random boolean by picking a number between 0 and 1 without using
 Math.round(), which would give you a non-uniform distribution.
